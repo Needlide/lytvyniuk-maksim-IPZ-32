@@ -44,10 +44,10 @@ body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.hero__btn:hover {
-    background-color: #188CE8;
-    cursor: pointer;
-}
+    .hero__btn:hover {
+        background-color: #188CE8;
+        cursor: pointer;
+    }
 
 .logo {
     font-family: var(--secondary-font);
@@ -98,10 +98,10 @@ a {
     color: black;
 }
 
-a:hover {
-    color: #2196F3;
-    cursor: pointer;
-}
+    a:hover {
+        color: #2196F3;
+        cursor: pointer;
+    }
 
 .a__active {
     color: #2196F3;
