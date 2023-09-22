@@ -1,7 +1,11 @@
 :root {
     --main-bg: #ffffff;
-    
     --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primary-font-size: 14px;
+    --logo-font-size: 26px;
+    --logo-font-weight: 700;
+    --logo-letter-spacing: 0.78px;
 }
 
 body {
@@ -9,6 +13,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-size: var(--primary-font-size);
 }
 
 .hero {
@@ -17,21 +22,103 @@ body {
 
 .hero__title {
     color: #FFF;
-    text-align: center;    
-    font-size: 44px;        
+    text-align: center;
+    font-size: 44px;
     font-weight: 900;
-    line-height: 60px; /* 136.364% */
+    line-height: 1.36;
     letter-spacing: 2.64px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .hero__btn {
+    max-width: 200px;
     color: #ffffff;
-    background-color: aqua;
+    background-color: #2196F3;
     font-family: var(--primary-font);
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
     border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hero__btn:hover {
+    background-color: #188CE8;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: var(--secondary-font);
+    font-size: var(--logo-font-size);
+    font-weight: var(--logo-font-weight);
+    letter-spacing: var(--logo-letter-spacing);
+}
+
+.logo__web {
+    color: #2196F3;
+}
+
+.logo:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.logo__footer {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #2196F3;
+    cursor: pointer;
+}
+
+a__active {
+    color: #2196F3;
+}
+
+ul {
+    list-style: none;
+}
+
+.header__link {
+    color: #757575;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.footer__link {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+}
+
+.nav__link {
+    color: #212121;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.maps {
+    color: #FFF;
+}
+
+header {
+    background-color: #FFF;
+}
+
+footer {
+    background-color: #2F303A;
 }
