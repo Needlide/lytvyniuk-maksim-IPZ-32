@@ -69,24 +69,6 @@ body {
     color: white;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: #2196F3;
-    cursor: pointer;
-}
-
-a__active {
-    color: #2196F3;
-}
-
-ul {
-    list-style: none;
-}
-
 .header__link {
     color: #757575;
     font-weight: 500;
@@ -109,6 +91,24 @@ ul {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #2196F3;
+    cursor: pointer;
+}
+
+.a__active {
+    color: #2196F3;
+}
+
+ul {
+    list-style: none;
 }
 
 .maps {
