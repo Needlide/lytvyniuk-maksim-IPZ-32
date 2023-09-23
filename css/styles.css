@@ -1,133 +1,138 @@
 :root {
-    --main-bg: #ffffff;
-    --primary-font: 'Roboto', sans-serif;
-    --secondary-font: 'Raleway', sans-serif;
-    --primary-font-size: 14px;
-    --logo-font-size: 26px;
-    --logo-font-weight: 700;
-    --logo-letter-spacing: 0.78px;
+  --main-bg: #ffffff;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-font-size: 14px;
+  --logo-font-size: 26px;
+  --logo-font-weight: 700;
+  --logo-letter-spacing: 0.78px;
 }
 
 body {
-    font-family: var(--primary-font);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    font-size: var(--primary-font-size);
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: var(--primary-font-size);
 }
 
 .hero {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .hero__title {
-    color: #FFF;
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
 }
 
 .hero__btn {
-    max-width: 200px;
-    color: #ffffff;
-    background-color: #2196F3;
-    font-family: var(--primary-font);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  max-width: 200px;
+  color: #ffffff;
+  background-color: #2196f3;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 300ms;
 }
 
-    .hero__btn:hover {
-        background-color: #188CE8;
-        cursor: pointer;
-    }
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: #188ce8;
+  cursor: pointer;
+}
 
 .logo {
-    font-family: var(--secondary-font);
-    font-size: var(--logo-font-size);
-    font-weight: var(--logo-font-weight);
-    letter-spacing: var(--logo-letter-spacing);
+  font-family: var(--secondary-font);
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+  letter-spacing: var(--logo-letter-spacing);
 }
 
 .logo__web {
-    color: #2196F3;
+  color: #2196f3;
 }
 
-.logo:hover {
-    color: black;
-    cursor: pointer;
+.logo:hover,
+.logo:focus {
+  color: black;
+  cursor: pointer;
 }
 
 .logo__footer {
-    color: white;
+  color: white;
 }
 
 .header__link {
-    color: #757575;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
+  color: #757575;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 
 .footer__link {
-    color: rgba(255, 255, 255, 0.60);
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
 }
 
 .nav__link {
-    color: #212121;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
+  color: #212121;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+  transition: color 300ms;
 }
 
-    a:hover {
-        color: #2196F3;
-        cursor: pointer;
-    }
+a:hover,
+a:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
 
 .a__active {
-    color: #2196F3;
+  color: #2196f3;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .maps {
-    color: #FFF;
+  color: #fff;
 }
 
 header {
-    background-color: #FFF;
+  background-color: #fff;
 }
 
 footer {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .hidden__elem {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
