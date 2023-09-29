@@ -24,6 +24,7 @@ body {
 
 header {
   background-color: var(--main-bg);
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -31,6 +32,7 @@ header {
   font-size: var(--logo-font-size);
   font-weight: var(--logo-font-weight);
   letter-spacing: var(--logo-letter-spacing);
+  margin-left: 13.44rem;
 }
 
 .logo__web {
@@ -86,6 +88,7 @@ a:focus {
 
 ul {
   list-style: none;
+  margin: 0%;
 }
 
 footer {
@@ -127,6 +130,52 @@ address {
   overflow: hidden;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 100rem/*1200px*/;
+}
+
+.flex__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex__container__nav__item {
+margin-left: 3.12rem;
+}
+
+.flex__container__contact__item {
+  margin-left: 2.5rem;
+}
+
+.flex__container__spec__item {
+  margin-left: 1.88rem;
+}
+
+.header__nav {
+  margin-left: 5.81rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo__header {
+  margin-top: 1.5rem;
+  margin-bottom: 1.56rem;
+}
+
+.header__contact {
+  margin-left: 22.12rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header__contact>li:not(:first-child) {
+  margin-left: 2.5rem;
+}
 /*-----------------------------------------*/
 
 /*Index*/
@@ -143,6 +192,9 @@ address {
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  margin-top: 12.5rem;
+  margin-left: 28.25rem;
+  width: 43.5rem;
 }
 
 .hero__btn {
@@ -154,11 +206,22 @@ address {
   line-height: 1.87;
   letter-spacing: 0.96px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 2.5rem;
+  margin-left: 43.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.62rem;
+  padding-bottom: 0.62rem;
 }
 
 .hero__btn:hover,
 .hero__btn:focus {
   background-color: #188ce8;
+}
+
+.section__spec {
+  margin-left: 13.44rem;
+  margin-top: 5.88rem;
 }
 
 .title__l {

@@ -14,36 +14,41 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="./index.html"
-        ><span class="logo__web">Web</span>Studio</a
-      >
-      <nav>
+      <div class="container flex__container">
+        <a class="logo" href="./index.html"
+          ><span class="logo__web">Web</span>Studio</a
+        >
+        <nav>
+          <ul>
+            <li>
+              <a class="nav__link a__active" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./index.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
         <ul>
           <li>
-            <a class="nav__link" href="./index.html">Студія</a>
+            <a class="header__link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a class="nav__link a__active" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li>
-            <a class="nav__link" href="./index.html">Контакти</a>
+            <a class="header__link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a class="header__link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="header__link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <section>
+      <section class="section">
+        <div class="container">
         <ul>
           <li>
             <button class="btn__filter" type="button">Усі</button>
@@ -61,9 +66,13 @@
             <button class="btn__filter" type="button">Маркетинг</button>
           </li>
         </ul>
+
+        </div>
       </section>
 
-      <section>
+      <section class="section">
+        <div class="container">
+
         <section class="tile">
           <img
             src="./images/portfolio/website.webp"
@@ -145,36 +154,39 @@
           <h3 class="tile__title">Growing Business</h3>
           <p class="tile__p">Додаток</p>
         </section>
+        </div>
       </section>
     </main>
 
     <footer>
-      <a class="logo logo__footer" href="./index.html"
-        ><span class="logo__web">Web</span>Studio</a
-      >
-      <address>
-        <ul>
-          <li>
-            <a
-              class="footer__link footer__googlemaps"
-              href="https://goo.gl/maps/zXnRZzUKmTX4V4ny9"
-              target="_blank"
-              rel="noreferrer nofollow"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="footer__link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="footer__link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="logo logo__footer" href="./index.html"
+          ><span class="logo__web">Web</span>Studio</a
+        >
+        <address>
+          <ul>
+            <li>
+              <a
+                class="footer__link footer__googlemaps"
+                href="https://goo.gl/maps/zXnRZzUKmTX4V4ny9"
+                target="_blank"
+                rel="noreferrer nofollow"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
