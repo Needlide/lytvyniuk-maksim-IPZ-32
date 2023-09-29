@@ -201,7 +201,7 @@ address {
 /*Portfolio*/
 
 .btn__filter {
-  color: #000;
+  color: var(--main-color);
   background-color: #f5f4fa;
   text-align: center;
   font-size: 16px;
