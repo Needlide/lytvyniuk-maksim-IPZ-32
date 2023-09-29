@@ -1,14 +1,17 @@
 /*Common*/
 
 :root {
-    --main-bg: #ffffff;
-    --primary-font: "Roboto", sans-serif;
-    --secondary-font: "Raleway", sans-serif;
-    --primary-font-size: 14px;
-    --logo-font-size: 26px;
-    --logo-font-weight: 700;
-    --logo-letter-spacing: 0.78px;
-    --small-letter-spacing: 0.48px;
+  --main-bg: #ffffff;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-font-size: 14px;
+  --logo-font-size: 26px;
+  --logo-font-weight: 700;
+  --logo-letter-spacing: 0.78px;
+  --small-letter-spacing: 0.48px;
+  --main-color: #212121;
+  --support-color: #2196f3;
+  --text-color: #757575;
 }
 
 body {
@@ -20,63 +23,65 @@ body {
 }
 
 header {
-    background-color: #fff;
+  background-color: var(--main-bg);
 }
 
 .logo {
-    font-family: var(--secondary-font);
-    font-size: var(--logo-font-size);
-    font-weight: var(--logo-font-weight);
-    letter-spacing: var(--logo-letter-spacing);
+  font-family: var(--secondary-font);
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+  letter-spacing: var(--logo-letter-spacing);
 }
 
 .logo__web {
-    color: #2196f3;
+  color: var(--support-color);
 }
 
 .logo:hover,
 .logo:focus {
-    color: black;
-    cursor: pointer;
+  color: black;
+  cursor: pointer;
 }
 
 .header__link {
-    color: #757575;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 
 .nav__link {
-    color: #212121;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
+  color: var(--main-color);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 
 .a__active {
-    color: #2196f3;
+  color: var(--support-color);
 }
 
 button {
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 300ms;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 300ms;
+  line-height: inherit;
+  font-size: inherit;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 300ms;
-    cursor: pointer;
-    line-height: inherit;
-    font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+  transition: color 300ms;
+  cursor: pointer;
+  line-height: inherit;
+  font-size: inherit;
 }
 
 a:hover,
 a:focus {
-  color: #2196f3;
+  color: var(--support-color);
 }
 
 ul {
@@ -88,10 +93,10 @@ footer {
 }
 
 .logo__footer {
-    color: white;
+  color: #fff;
 }
 
-.footer__googlemaps {
+.logo__footer:hover{
     color: #fff;
 }
 
@@ -100,13 +105,17 @@ address {
 }
 
 .footer__link {
-    color: rgba(255, 255, 255, 0.6);
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+}
+
+.footer__googlemaps {
+  color: #fff;
 }
 
 .hidden__elem {
@@ -119,8 +128,6 @@ address {
 }
 
 /*-----------------------------------------*/
-
-
 
 /*Index*/
 
@@ -139,14 +146,14 @@ address {
 }
 
 .hero__btn {
-    color: #ffffff;
-    background-color: #2196f3;
-    font-family: var(--primary-font);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  background-color: var(--support-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero__btn:hover,
@@ -155,76 +162,78 @@ address {
 }
 
 .title__l {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: inherit;
-    letter-spacing: 0.42px;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: inherit;
+  letter-spacing: 0.42px;
 }
 
 .p__spec {
-    color: #757575;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+  color: var(--text-color);
+  line-height: 1.71;
+  letter-spacing: 0.42px;
 }
 
 .title__heading {
-    font-weight: 700;
-    font-size: 36px;
-    font-style: inherit;
-    letter-spacing: 1.08px;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 36px;
+  font-style: inherit;
+  letter-spacing: 1.08px;
 }
 
 .title__team {
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: var(--small-letter-spacing);
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: var(--small-letter-spacing);
 }
 
 .p__team {
-    font-size: 16px;
-    letter-spacing: var(--small-letter-spacing);
-    color: #757575;
+  font-size: 16px;
+  letter-spacing: var(--small-letter-spacing);
+  color: var(--text-color);
 }
 
 /*-----------------------------------------*/
 
-
-
 /*Portfolio*/
 
 .btn__filter {
-    color: #000;
-    background-color: #F5F4FA;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: var(--small-letter-spacing);
+  color: #000;
+  background-color: #f5f4fa;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: var(--small-letter-spacing);
 }
 
 .btn__filter:hover {
-    color: #fff;
-    background-color: #2196f3;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+  color: #fff;
+  background-color: var(--support-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .tile {
-    border: 1px solid #eee;
-    background: #fff;
+  border: 1px solid #eee;
+  background: #fff;
 }
 
 .tile__title {
-    color: #212121;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 1.08px;
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
 }
 
 .tile__p {
-    color: #757575;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: var(--small-letter-spacing);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: var(--small-letter-spacing);
 }
 /*-----------------------------------------*/
