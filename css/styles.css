@@ -1,0 +1,239 @@
+/*Common*/
+
+:root {
+  --main-bg: #ffffff;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-font-size: 14px;
+  --logo-font-size: 26px;
+  --logo-font-weight: 700;
+  --logo-letter-spacing: 0.78px;
+  --small-letter-spacing: 0.48px;
+  --main-color: #212121;
+  --support-color: #2196f3;
+  --text-color: #757575;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-size: var(--primary-font-size);
+}
+
+header {
+  background-color: var(--main-bg);
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-size: var(--logo-font-size);
+  font-weight: var(--logo-font-weight);
+  letter-spacing: var(--logo-letter-spacing);
+}
+
+.logo__web {
+  color: var(--support-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.header__link {
+  color: var(--text-color);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.nav__link {
+  color: var(--main-color);
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.a__active {
+  color: var(--support-color);
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 300ms;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 300ms;
+  cursor: pointer;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+a:hover,
+a:focus {
+  color: var(--support-color);
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+.logo__footer {
+  color: #fff;
+}
+
+.logo__footer:hover{
+    color: #fff;
+}
+
+address {
+  text-decoration: none;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+}
+
+.footer__googlemaps {
+  color: #fff;
+}
+
+.hidden__elem {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/*-----------------------------------------*/
+
+/*Index*/
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero__title {
+  color: #fff;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+
+.hero__btn {
+  color: #ffffff;
+  background-color: var(--support-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: #188ce8;
+}
+
+.title__l {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: inherit;
+  letter-spacing: 0.42px;
+}
+
+.p__spec {
+  color: var(--text-color);
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.title__heading {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 36px;
+  font-style: inherit;
+  letter-spacing: 1.08px;
+}
+
+.title__team {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: var(--small-letter-spacing);
+}
+
+.p__team {
+  font-size: 16px;
+  letter-spacing: var(--small-letter-spacing);
+  color: var(--text-color);
+}
+
+/*-----------------------------------------*/
+
+/*Portfolio*/
+
+.btn__filter {
+  color: #000;
+  background-color: #f5f4fa;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: var(--small-letter-spacing);
+}
+
+.btn__filter:hover {
+  color: #fff;
+  background-color: var(--support-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tile {
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+.tile__title {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
+}
+
+.tile__p {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: var(--small-letter-spacing);
+}
+/*-----------------------------------------*/
