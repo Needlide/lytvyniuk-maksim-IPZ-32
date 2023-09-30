@@ -70,6 +70,7 @@ button {
   transition: background-color 300ms;
   line-height: inherit;
   font-size: inherit;
+  font-family: inherit;
 }
 
 a {
