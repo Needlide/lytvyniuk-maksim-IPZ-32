@@ -214,6 +214,7 @@ h1, h2, h3, h4, h5, h6, p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-top: 2.5rem;
   margin-left: 43.75rem;
+  margin-bottom: 12.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.62rem;
@@ -227,7 +228,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .section__spec {
   margin-left: 13.44rem;
-  margin-top: 5.88rem;
 }
 
 .title__l {
