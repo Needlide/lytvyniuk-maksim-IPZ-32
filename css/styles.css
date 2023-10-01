@@ -160,6 +160,18 @@ address {
   margin-left: 1.88rem;
 }
 
+.grid__container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 2.12rem;
+  width: fit-content;
+  gap: 1.88rem;
+}
+
+.grid__container > :nth-child(3n + 1) {
+  margin-left: 13.44rem;
+}
+
 .header__nav {
   margin-left: 5.81rem;
   margin-top: 2rem;
@@ -333,6 +345,14 @@ p {
 
 /*Portfolio*/
 
+.filters__area {
+  margin-left: 32.25rem;
+}
+
+.flex__container__filters > li:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
 .btn__filter {
   color: var(--main-color);
   background-color: #f5f4fa;
@@ -341,6 +361,7 @@ p {
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: var(--small-letter-spacing);
+  padding: 0.38rem 1.38rem;
 }
 
 .btn__filter:hover {
@@ -353,6 +374,7 @@ p {
 .tile {
   border: 1px solid #eee;
   background: #fff;
+  width: fit-content;
 }
 
 .tile__title {
@@ -361,6 +383,7 @@ p {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
+  margin-left: 1.5rem;
 }
 
 .tile__p {
@@ -368,5 +391,7 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: var(--small-letter-spacing);
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 /*-----------------------------------------*/
