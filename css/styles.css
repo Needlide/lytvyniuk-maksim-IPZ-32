@@ -140,7 +140,11 @@ address {
 }
 
 .container {
-  width: 100rem;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex__container {
@@ -179,14 +183,11 @@ address {
 }
 
 .logo__header {
-  margin-top: 1.5rem;
-  margin-bottom: 1.56rem;
+  margin-right: auto;
 }
 
 .header__contact {
-  margin-left: 22.12rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-left: auto;
 }
 
 .header__contact > li:not(:first-child) {
