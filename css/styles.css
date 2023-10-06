@@ -1,7 +1,7 @@
 /*Common*/
 
 :root {
-  --main-bg: #ffffff;
+  --main-bg: #fff;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --primary-font-size: 14px;
@@ -11,7 +11,15 @@
   --small-letter-spacing: 0.48px;
   --main-color: #212121;
   --support-color: #2196f3;
+  --hero-button-hover-color: #188ce8;
   --text-color: #757575;
+  --logo-header-hover-color: #000;
+  --footer-hero-color: #2f303a;
+  --logo-color: #fff;
+  --hero-text-color: #fff;
+  --team-section-bg-color: #f5f4fa;
+  --tile-border-color: #eee;
+  --header-border-color: #ececec;
 }
 
 body {
@@ -24,7 +32,7 @@ body {
 
 header {
   background-color: var(--main-bg);
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .logo {
@@ -41,7 +49,7 @@ header {
 
 .logo:hover,
 .logo:focus {
-  color: black;
+  color: var(--logo-header-hover-color);
   cursor: pointer;
 }
 
@@ -94,17 +102,17 @@ ul {
 }
 
 footer {
-  background-color: #2f303a;
+  background-color: var(--footer-hero-color);
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
 }
 
 .logo__footer {
-  color: #fff;
+  color: var(--logo-color);
 }
 
 .logo__footer:hover {
-  color: #fff;
+  color: var(--logo-color);
 }
 
 address {
@@ -122,7 +130,7 @@ address {
 }
 
 .footer__googlemaps {
-  color: #fff;
+  color: var(--logo-color);
 }
 
 .hidden__elem {
@@ -221,11 +229,11 @@ p {
 /*Index*/
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--footer-hero-color);
 }
 
 .hero__title {
-  color: #fff;
+  color: var(--hero-text-color);
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -238,7 +246,7 @@ p {
 }
 
 .hero__btn {
-  color: #ffffff;
+  color: var(--hero-text-color);
   background-color: var(--support-color);
   font-family: var(--primary-font);
   font-size: 16px;
@@ -257,7 +265,7 @@ p {
 
 .hero__btn:hover,
 .hero__btn:focus {
-  background-color: #188ce8;
+  background-color: var(--hero-button-hover-color);
 }
 
 .section__spec {
@@ -300,7 +308,7 @@ p {
 }
 
 .section__team {
-  background-color: #f5f4fa;
+  background-color: var(--team-section-bg-color);
 }
 
 .title__heading__team {
@@ -319,7 +327,7 @@ p {
 }
 
 .card__team {
-  background-color: #fff;
+  background-color: var(--main-bg);
   text-align: center;
   border-radius: 0rem 0rem 0.25rem 0.25rem;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -328,7 +336,7 @@ p {
 }
 
 .title__team {
-  color: #212121;
+  color: var(--main-color);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: var(--small-letter-spacing);
@@ -356,7 +364,7 @@ p {
 
 .btn__filter {
   color: var(--main-color);
-  background-color: #f5f4fa;
+  background-color: var(--team-section-bg-color);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -366,15 +374,15 @@ p {
 }
 
 .btn__filter:hover {
-  color: #fff;
+  color: var(--main-bg);
   background-color: var(--support-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .tile {
-  border: 1px solid #eee;
-  background: #fff;
+  border: 1px solid var(--tile-border-color);
+  background: var(--main-bg);
   width: fit-content;
 }
 
