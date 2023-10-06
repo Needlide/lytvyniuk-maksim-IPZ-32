@@ -40,7 +40,6 @@ header {
   font-size: var(--logo-font-size);
   font-weight: var(--logo-font-weight);
   letter-spacing: var(--logo-letter-spacing);
-  margin-left: 13.44rem;
 }
 
 .logo__web {
@@ -97,14 +96,14 @@ a:focus {
 
 ul {
   list-style: none;
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
   background-color: var(--footer-hero-color);
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo__footer {
@@ -157,37 +156,36 @@ address {
 
 .flex__container {
   display: flex;
-  flex-direction: row;
 }
 
-.flex__container__nav__item {
-  margin-left: 3.12rem;
+.flex__container__nav__item:not(:first-child) {
+  margin-left: 50px;
 }
 
-.flex__container__contact__item {
-  margin-left: 2.5rem;
+.flex__container__contact__item:not(:first-child) {
+  margin-left: 40px;
 }
 
-.flex__container__spec__item {
-  margin-left: 1.88rem;
+.flex__container__spec__item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .grid__container {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin-top: 2.12rem;
+  margin-top: 34px;
   width: fit-content;
-  gap: 1.88rem;
+  gap: 30px;
 }
 
 .grid__container > :nth-child(3n + 1) {
-  margin-left: 13.44rem;
+  margin-left: 215px;
 }
 
 .header__nav {
-  margin-left: 5.81rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-left: 93px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .logo__header {
@@ -199,19 +197,19 @@ address {
 }
 
 .header__contact > li:not(:first-child) {
-  margin-left: 2.5rem;
+  margin-left: 40px;
 }
 
 .footer__contact__list {
-  margin-left: 13.44rem;
+  margin-left: 215px;
 }
 
 .footer__contact__list > li:not(:last-child) {
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
 }
 
 .footer__address {
-  margin-top: 1.75rem;
+  margin-top: 28px;
 }
 
 h1,
@@ -224,12 +222,14 @@ p {
   margin: 0;
   padding: 0;
 }
+
 /*-----------------------------------------*/
 
 /*Index*/
 
 .hero {
   background-color: var(--footer-hero-color);
+  padding: 0;
 }
 
 .hero__title {
@@ -240,9 +240,10 @@ p {
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
-  margin-top: 12.5rem;
-  margin-left: 28.25rem;
-  width: 43.5rem;
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
 }
 
 .hero__btn {
@@ -254,13 +255,14 @@ p {
   line-height: 1.87;
   letter-spacing: 0.96px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 2.5rem;
-  margin-left: 43.75rem;
-  margin-bottom: 12.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.62rem;
-  padding-bottom: 0.62rem;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .hero__btn:hover,
@@ -269,7 +271,7 @@ p {
 }
 
 .section__spec {
-  margin-left: 13.44rem;
+  margin-left: 215px;
 }
 
 .title__l {
@@ -287,16 +289,16 @@ p {
 }
 
 .what__we__do {
-  margin-left: 13.44rem;
+  margin-left: 215px;
 }
 
 .what__we__do_title {
-  margin-left: 38.56rem;
-  margin-bottom: 3.13rem;
+  margin-left: 617px;
+  margin-bottom: 50px;
 }
 
 .flex__container__what__we__do > li:not(:first-child) {
-  margin-left: 1.87rem;
+  margin-left: 30px;
 }
 
 .title__heading {
@@ -312,27 +314,28 @@ p {
 }
 
 .title__heading__team {
-  margin-top: 5.88rem;
-  margin-left: 41.75rem;
+  margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list__team {
-  margin-top: 3.13rem;
-  margin-left: 13.44rem;
-  margin-bottom: 5.88rem;
+  margin-top: 50px;
+  margin-left: 215px;
+  margin-bottom: 94px;
 }
 
 .list__team > li:not(:first-child) {
-  margin-left: 1.88rem;
+  margin-left: 30px;
 }
 
 .card__team {
   background-color: var(--main-bg);
   text-align: center;
-  border-radius: 0rem 0rem 0.25rem 0.25rem;
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  padding-bottom: 1.87rem;
+  padding-bottom: 30px;
 }
 
 .title__team {
@@ -340,14 +343,14 @@ p {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: var(--small-letter-spacing);
-  margin-top: 1.87rem;
+  margin-top: 30px;
 }
 
 .p__team {
   font-size: 16px;
   letter-spacing: var(--small-letter-spacing);
   color: var(--text-color);
-  margin-top: 0.62rem;
+  margin-top: 10px;
 }
 
 /*-----------------------------------------*/
@@ -355,11 +358,12 @@ p {
 /*Portfolio*/
 
 .filters__area {
-  margin-left: 32.25rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex__container__filters > li:not(:first-child) {
-  margin-left: 0.5rem;
+  margin-left: 8px;
 }
 
 .btn__filter {
@@ -370,7 +374,7 @@ p {
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: var(--small-letter-spacing);
-  padding: 0.38rem 1.38rem;
+  padding: 6px 22px;
 }
 
 .btn__filter:hover {
@@ -392,7 +396,7 @@ p {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
-  margin-left: 1.5rem;
+  margin-left: 24px;
 }
 
 .tile__p {
@@ -400,7 +404,7 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: var(--small-letter-spacing);
-  margin-left: 1.5rem;
-  margin-bottom: 1.25rem;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
 /*-----------------------------------------*/
