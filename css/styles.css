@@ -9,6 +9,7 @@
   --logo-font-weight: 700;
   --logo-letter-spacing: 0.78px;
   --small-letter-spacing: 0.48px;
+
   --main-color: #212121;
   --support-color: #2196f3;
   --hero-button-hover-color: #188ce8;
@@ -23,6 +24,7 @@
 }
 
 body {
+  background-color: var(--main-bg);
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
@@ -35,11 +37,16 @@ header {
   border-bottom: 1px solid var(--header-border-color);
 }
 
+img {
+  display: block;
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-size: var(--logo-font-size);
   font-weight: var(--logo-font-weight);
   letter-spacing: var(--logo-letter-spacing);
+  color: var(--logo-header-hover-color);
 }
 
 .logo__web {
@@ -57,6 +64,8 @@ header {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav__link {
@@ -64,6 +73,8 @@ header {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .a__active {
@@ -156,6 +167,14 @@ address {
 
 .flex__container {
   display: flex;
+  align-items: center;
+}
+
+.flex__container--hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0px;
 }
 
 .flex__container__nav__item:not(:first-child) {
@@ -173,23 +192,20 @@ address {
 .grid__container {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin-top: 34px;
+  margin-top: 56px;
   width: fit-content;
   gap: 30px;
 }
 
-.grid__container > :nth-child(3n + 1) {
-  margin-left: 215px;
-}
-
 .header__nav {
   margin-left: 93px;
-  margin-top: 32px;
+  margin-top: 31px;
   margin-bottom: 32px;
 }
 
 .logo__header {
-  margin-right: auto;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header__contact {
@@ -198,10 +214,6 @@ address {
 
 .header__contact > li:not(:first-child) {
   margin-left: 40px;
-}
-
-.footer__contact__list {
-  margin-left: 215px;
 }
 
 .footer__contact__list > li:not(:last-child) {
@@ -240,9 +252,6 @@ p {
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
-  padding-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 696px;
 }
 
@@ -255,10 +264,7 @@ p {
   line-height: 1.87;
   letter-spacing: 0.96px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
+  margin-top: 30px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 10px;
@@ -271,7 +277,8 @@ p {
 }
 
 .section__spec {
-  margin-left: 215px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title__l {
@@ -289,11 +296,11 @@ p {
 }
 
 .what__we__do {
-  margin-left: 215px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .what__we__do_title {
-  margin-left: 617px;
   margin-bottom: 50px;
 }
 
@@ -307,22 +314,19 @@ p {
   font-size: 36px;
   font-style: inherit;
   letter-spacing: 1.08px;
+  text-align: center;
 }
 
 .section__team {
   background-color: var(--team-section-bg-color);
 }
 
-.title__heading__team {
-  margin-top: 94px;
-  margin-left: auto;
-  margin-right: auto;
+.benefits {
+  padding-bottom: 0;
 }
 
 .list__team {
   margin-top: 50px;
-  margin-left: 215px;
-  margin-bottom: 94px;
 }
 
 .list__team > li:not(:first-child) {
@@ -360,6 +364,9 @@ p {
 .filters__area {
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex__container__filters > li:not(:first-child) {
