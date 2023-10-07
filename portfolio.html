@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>WebStudio portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-normalize@2.0.0/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,167 +17,196 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="./index.html"
-        ><span class="logo__web">Web</span>Studio</a
-      >
-      <nav>
-        <ul>
-          <li>
-            <a class="nav__link" href="./index.html">Студія</a>
-          </li>
-          <li>
-            <a class="nav__link a__active" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li>
-            <a class="nav__link" href="./index.html">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <ul>
-        <li>
-          <a class="header__link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="header__link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
-    </header>
-
-    <main>
-      <section>
-        <ul>
-          <li>
-            <button class="btn__filter" type="button">Усі</button>
-          </li>
-          <li>
-            <button class="btn__filter" type="button">Веб-сайти</button>
-          </li>
-          <li>
-            <button class="btn__filter" type="button">Додатки</button>
-          </li>
-          <li>
-            <button class="btn__filter" type="button">Дизайн</button>
-          </li>
-          <li>
-            <button class="btn__filter" type="button">Маркетинг</button>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <section class="tile">
-          <img
-            src="./images/portfolio/website.webp"
-            alt="Picture of notebook with opened website."
-            width="300"
-          />
-          <h3 class="tile__title">Технокряк</h3>
-          <p class="tile__p">Веб-сайт</p>
-        </section>
-        <section class="tile">
-          <img
-            src="./images/portfolio/newOrleanVsGoldenStar.webp"
-            alt="Poster of NBA players from New Orlean and Golden Star."
-            width="300"
-          />
-          <h3 class="tile__title">Постер New Orlean vs Golden Star</h3>
-          <p class="tile__p">Дизайн</p>
-        </section>
-        <section class="tile">
-          <img
-            src="./images/portfolio/seafoodRestaurant.webp"
-            alt="Logo of Seafood restoran. Drawed tuna with foreground text on it."
-            width="300"
-          />
-          <h3 class="tile__title">Ресторан Seafood</h3>
-          <p class="tile__p">Додаток</p>
-        </section>
-        <section class="tile">
-          <img
-            src="./images/portfolio/primeProjectMarketing.webp"
-            alt="Picture of black headphones on plain white background."
-            width="300"
-          />
-          <h3 class="tile__title">Проєкт Prime</h3>
-          <p class="tile__p">Маркетинг</p>
-        </section>
-        <section class="tile">
-          <img
-            src="./images/portfolio/boxesProject.webp"
-            alt="Two small boxes on white background."
-            width="300"
-          />
-          <h3 class="tile__title">Проєкт boxes</h3>
-          <p class="tile__p">Додаток</p>
-        </section>
-        <section class="tile">
-          <img
-            src="./images/portfolio/inspirationWebsite.webp"
-            alt="Picture of computer monitor."
-            width="300"
-          />
-          <h3 class="tile__title">Inspiration has no Borders</h3>
-          <p class="tile__p">Веб-сайт</p>
-        </section>
-        <section class="tile">
-          <img
-            src="./images/portfolio/limitedEditionDesign.webp"
-            alt="Picture of magazine."
-            width="300"
-          />
-          <h3 class="tile__title">Видання Limited Edition</h3>
-          <p class="tile__p">Дизайн</p>
-        </section>
-        <section class="tile">
-          <img
-            src="./images/portfolio/labProject.webp"
-            alt="Picture of white tag with text on it."
-            width="300"
-          />
-          <h3 class="tile__title">Проєкт LAB</h3>
-          <p class="tile__p">Маркетинг</p>
-        </section>
-        <section class="tile">
-          <img
-            src="./images/portfolio/growingBusiness.webp"
-            alt="Picture from above of notebook and human hands on the notebook keyboard."
-            width="300"
-          />
-          <h3 class="tile__title">Growing Business</h3>
-          <p class="tile__p">Додаток</p>
-        </section>
-      </section>
-    </main>
-
-    <footer>
-      <a class="logo logo__footer" href="./index.html"
-        ><span class="logo__web">Web</span>Studio</a
-      >
-      <address>
-        <ul>
-          <li>
-            <a
-              class="footer__link footer__googlemaps"
-              href="https://goo.gl/maps/zXnRZzUKmTX4V4ny9"
-              target="_blank"
-              rel="noreferrer nofollow"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="footer__link" href="mailto:info@devstudio.com"
+      <div class="container flex__container">
+        <a class="logo logo__header" href="./index.html"
+          ><span class="logo__web">Web</span>Studio</a
+        >
+        <nav class="header__nav">
+          <ul class="flex__container">
+            <li class="flex__container__nav__item">
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="flex__container__nav__item">
+              <a class="nav__link a__active" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="flex__container__nav__item">
+              <a class="nav__link" href="./index.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="flex__container header__contact">
+          <li class="flex__container__contact__item">
+            <a class="header__link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="footer__link" href="tel:+380961111111"
+          <li class="flex__container__contact__item">
+            <a class="header__link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
-      </address>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <ul class="flex__container flex__container__filters filters__area">
+            <li>
+              <button class="btn__filter" type="button">Усі</button>
+            </li>
+            <li>
+              <button class="btn__filter" type="button">Веб-сайти</button>
+            </li>
+            <li>
+              <button class="btn__filter" type="button">Додатки</button>
+            </li>
+            <li>
+              <button class="btn__filter" type="button">Дизайн</button>
+            </li>
+            <li>
+              <button class="btn__filter" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="grid__container">
+            <li class="tile">
+              <a>
+                <img
+                  src="./images/portfolio/website.webp"
+                  alt="Picture of notebook with opened website."
+                  width="370"
+                />
+                <div>
+                  <h3 class="tile__title">Технокряк</h3>
+                  <p class="tile__p">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="tile">
+              <a>
+                <img
+                  src="./images/portfolio/newOrleanVsGoldenStar.webp"
+                  alt="Poster of NBA players from New Orlean and Golden Star."
+                  width="370"
+                />
+                <h3 class="tile__title">Постер New Orlean vs Golden Star</h3>
+                <p class="tile__p">Дизайн</p>
+              </a>
+            </li>
+            <li class="tile">
+              <a>
+                <img
+                  src="./images/portfolio/seafoodRestaurant.webp"
+                  alt="Logo of Seafood restoran. Drawed tuna with foreground text on it."
+                  width="370"
+                />
+                <h3 class="tile__title">Ресторан Seafood</h3>
+                <p class="tile__p">Додаток</p>
+              </a>
+            </li>
+            <li class="tile">
+              <a>
+                <img
+                  src="./images/portfolio/primeProjectMarketing.webp"
+                  alt="Picture of black headphones on plain white background."
+                  width="370"
+                />
+                <h3 class="tile__title">Проєкт Prime</h3>
+                <p class="tile__p">Маркетинг</p>
+              </a>
+            </li>
+            <li class="tile">
+              <a>
+                <img
+                  src="./images/portfolio/boxesProject.webp"
+                  alt="Two small boxes on white background."
+                  width="370"
+                />
+                <h3 class="tile__title">Проєкт boxes</h3>
+                <p class="tile__p">Додаток</p>
+              </a>
+            </li>
+            <li class="tile">
+              <a>
+                <img
+                  src="./images/portfolio/inspirationWebsite.webp"
+                  alt="Picture of computer monitor."
+                  width="370"
+                />
+                <h3 class="tile__title">Inspiration has no Borders</h3>
+                <p class="tile__p">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="tile">
+              <a>
+                <img
+                  src="./images/portfolio/limitedEditionDesign.webp"
+                  alt="Picture of magazine."
+                  width="370"
+                />
+                <h3 class="tile__title">Видання Limited Edition</h3>
+                <p class="tile__p">Дизайн</p>
+              </a>
+            </li>
+            <li class="tile">
+              <a>
+                <img
+                  src="./images/portfolio/labProject.webp"
+                  alt="Picture of white tag with text on it."
+                  width="370"
+                />
+                <h3 class="tile__title">Проєкт LAB</h3>
+                <p class="tile__p">Маркетинг</p>
+              </a>
+            </li>
+            <li class="tile">
+              <a>
+                <img
+                  src="./images/portfolio/growingBusiness.webp"
+                  alt="Picture from above of notebook and human hands on the notebook keyboard."
+                  width="370"
+                />
+                <h3 class="tile__title">Growing Business</h3>
+                <p class="tile__p">Додаток</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <a class="logo logo__footer" href="./index.html"
+          ><span class="logo__web">Web</span>Studio</a
+        >
+        <address class="footer__address">
+          <ul>
+            <li>
+              <a
+                class="footer__link footer__googlemaps"
+                href="https://goo.gl/maps/zXnRZzUKmTX4V4ny9"
+                target="_blank"
+                rel="noreferrer nofollow"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer__link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
