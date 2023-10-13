@@ -41,6 +41,10 @@ img {
   display: block;
 }
 
+svg {
+  
+}
+
 .logo {
   font-family: var(--secondary-font);
   font-size: var(--logo-font-size);
