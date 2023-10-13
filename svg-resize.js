@@ -1,8 +1,11 @@
-var svgList = document.getElementsByTagName("svg");
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("svg").forEach((svg) => {
+    const viewBox = svg.getAttribute("viewBox");
 
-svgList.forEach(element => {
-    let bbox = svg.getBBox();
-
-    element.setAttribute("width", bbox.x + bbox.width + "px");
-    element.setAttribute("height", bbox.x + bbox.height + "px");
+    if (viewBox) {
+      const [, , width, height] = viewBox.split(/\s+|,/);
+      svg.setAttribute("width", width);
+      svg.setAttribute("height", height);
+    }
+  });
 });
