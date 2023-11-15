@@ -41,10 +41,6 @@ img {
   display: block;
 }
 
-svg {
-  display: inline-block;
-}
-
 .logo {
   font-family: var(--secondary-font);
   font-size: var(--logo-font-size);
@@ -70,11 +66,9 @@ svg {
   letter-spacing: 0.28px;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.header__link > svg {
-  margin-right: 10px;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
 }
 
 .nav__link {
@@ -183,8 +177,19 @@ address {
   align-items: center;
 }
 
+.flex__container--hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0px;
+}
+
 .flex__container__nav__item:not(:first-child) {
   margin-left: 50px;
+}
+
+.flex__container__contact__item:not(:first-child) {
+  margin-left: 40px;
 }
 
 .flex__container__spec__item:not(:first-child) {
@@ -241,22 +246,9 @@ p {
 
 .hero {
   background-color: var(--footer-hero-color);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/index/heroBackground.jpg");
   padding: 0;
-}
-
-.flex__container--hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 200px 0px;
-}
-
-#hero {
-  background-image: url('/images/index/heroBackground.jpg'); 
-}
-
-.hero__btn:hover #hero {
-  background-image: url('/images/index/ricardo-milos.gif');
 }
 
 .hero__title {
