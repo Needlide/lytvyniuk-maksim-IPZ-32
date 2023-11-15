@@ -21,6 +21,7 @@
   --team-section-bg-color: #f5f4fa;
   --tile-border-color: #eee;
   --header-border-color: #ececec;
+  --benefits-icon-bg-color: #F5F4FA;
 }
 
 body {
@@ -292,6 +293,17 @@ p {
   align-items: flex-start;
 }
 
+.benefits__icon {
+  background-color: var(--benefits-icon-bg-color);
+  padding: 25px 80px;
+  max-width: 270px;
+  max-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .title__l {
   color: var(--main-color);
   text-transform: uppercase;
@@ -370,6 +382,18 @@ p {
   letter-spacing: var(--small-letter-spacing);
   color: var(--text-color);
   margin-top: 10px;
+}
+
+.team__socials {
+  margin-top: 16px;
+}
+
+.team__socials > li {
+  display: inline;
+}
+
+.team__socials > li:not(:last-child) {
+  margin-right: 34px;
 }
 
 /*-----------------------------------------*/
