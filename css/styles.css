@@ -388,12 +388,50 @@ p {
   margin-top: 16px;
 }
 
-.team__socials > li {
-  display: inline;
+.team__socials_item {
+  display: inline-block;
+  align-content: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #AFB1B8;
+  width: 44px;
+  height: 44px;
 }
 
-.team__socials > li:not(:last-child) {
-  margin-right: 34px;
+.team__socials_item > svg {
+  margin-top: 11px;
+}
+
+.team__socials_item:hover {
+  background: var(--hero-button-hover-color);
+  color: #fff;
+  transition: background-color 300ms;
+  transition: color 300ms;
+}
+
+.clients__list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__list_item {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border-color: #AFB1B8;
+  color: #AFB1B8;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__list_item:hover {
+  border-color: var(--hero-button-hover-color);
+  transition: color 300ms;
+  transition: background 300ms;
 }
 
 /*-----------------------------------------*/
