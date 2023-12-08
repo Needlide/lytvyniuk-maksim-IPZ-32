@@ -125,7 +125,8 @@ footer {
   color: var(--logo-color);
 }
 
-.logo__footer:hover {
+.logo__footer:hover,
+.logo__footer:focus {
   color: var(--logo-color);
 }
 
@@ -175,7 +176,7 @@ address {
 
 .flex__container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .flex__container--hero {
@@ -239,7 +240,8 @@ address {
 }
 
 .footer__socials_header {
-margin-bottom: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .footer__socials_list {
@@ -259,7 +261,8 @@ margin-bottom: 20px;
   margin-left: 12px;
 }
 
-.footer__socials_list--item:hover {
+.footer__socials_list--item:hover,
+.footer__socials_list--item:focus {
   background-color: var(--hero-button-hover-color);
   transition: background-color 300ms;
 }
@@ -420,23 +423,29 @@ p {
 
 .team__socials {
   margin-top: 16px;
+  gap: 10px;
+  margin-left: 32px;
 }
 
 .team__socials_item {
   display: inline-block;
   align-content: center;
-  margin-right: 10px;
   border-radius: 50%;
   color: #AFB1B8;
   width: 44px;
   height: 44px;
 }
 
+.team__socials_item:not(:last-child) {
+    margin-right: 10px;
+}
+
 .team__socials_item > svg {
   margin-top: 11px;
 }
 
-.team__socials_item:hover {
+.team__socials_item:hover,
+.team__socials_item:focus {
   background: var(--hero-button-hover-color);
   color: #fff;
   transition: background-color 300ms;
@@ -462,7 +471,8 @@ p {
   align-items: center;
 }
 
-.clients__list_item:hover {
+.clients__list_item:hover,
+.clients__list_item:focus {
   border-color: var(--hero-button-hover-color);
   transition: color 300ms;
   transition: background 300ms;
@@ -495,7 +505,8 @@ p {
   padding: 6px 22px;
 }
 
-.btn__filter:hover {
+.btn__filter:hover,
+.btn__filter:focus {
   color: var(--main-bg);
   background-color: var(--support-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
@@ -506,6 +517,7 @@ p {
   border: 1px solid var(--tile-border-color);
   background: var(--main-bg);
   width: fit-content;
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12); 
 }
 
 .tile div {
