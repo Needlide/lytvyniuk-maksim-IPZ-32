@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./svg-resize.js"></script>
   </head>
   <body>
     <header>
@@ -35,14 +36,20 @@
           </ul>
         </nav>
         <ul class="flex__container header__contact">
-          <li class="flex__container__contact__item">
-            <a class="header__link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+          <li>
+            <a class="header__link" href="mailto:info@devstudio.com">
+              <svg viewBox="0 0 16 13">
+                <use xlink:href="./icons/icons.svg#email" />
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li class="flex__container__contact__item">
-            <a class="header__link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+          <li>
+            <a class="header__link" href="tel:+380961111111">
+              <svg viewBox="0 0 10 17">
+                <use xlink:href="./icons/icons.svg#smartphone" />
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -51,7 +58,7 @@
 
     <main>
       <section class="hero section">
-        <div class="container flex__container--hero">
+        <div id="hero" class="container flex__container--hero">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn">Замовити послугу</button>
         </div>
@@ -62,6 +69,11 @@
           <h2 class="hidden__elem">Наші особливості</h2>
           <ul class="section__spec flex__container">
             <li class="flex__container__spec__item">
+              <div class="benefits__icon">
+                <svg viewBox="0 0 70 70">
+                  <use xlink:href="./icons/icons.svg#antenna" />
+                </svg>
+              </div>
               <h3 class="title__l">Увага до деталей</h3>
               <p class="p__spec">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -70,6 +82,11 @@
             </li>
 
             <li class="flex__container__spec__item">
+              <div class="benefits__icon">
+                <svg viewBox="0 0 70 70">
+                  <use xlink:href="./icons/icons.svg#clock" />
+                </svg>
+              </div>
               <h3 class="title__l">Пунктуальність</h3>
               <p class="p__spec">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -78,6 +95,11 @@
             </li>
 
             <li class="flex__container__spec__item">
+              <div class="benefits__icon">
+                <svg viewBox="0 0 70 70">
+                  <use xlink:href="./icons/icons.svg#diagram" />
+                </svg>
+              </div>
               <h3 class="title__l">Планування</h3>
               <p class="p__spec">
                 Так само консультація з широким активом значною мірою зумовлює.
@@ -85,6 +107,11 @@
             </li>
 
             <li class="flex__container__spec__item">
+              <div class="benefits__icon">
+                <svg viewBox="0 0 70 70">
+                  <use xlink:href="./icons/icons.svg#astronaut" />
+                </svg>
+              </div>
               <h3 class="title__l">Сучасні технології</h3>
               <p class="p__spec">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -138,6 +165,36 @@
               />
               <h3 class="title__team">Ігор Дем'яненко</h3>
               <p class="p__team">Product designer</p>
+              <ul class="team__socials flex__container">
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#instagram" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#twitter" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#facebook" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#linkedin" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="card__team">
               <img
@@ -147,6 +204,36 @@
               />
               <h3 class="title__team">Ольга Рєпіна</h3>
               <p class="p__team">Frontend developer</p>
+              <ul class="team__socials flex__container">
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#instagram" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#twitter" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#facebook" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#linkedin" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="card__team">
               <img
@@ -154,8 +241,38 @@
                 alt="Фотографія члена команди"
                 width="270"
               />
-              <h3 class="title__team">Микола Тарасов</h3>
+              <h3 class="title__team">Микола Парасюк</h3>
               <p class="p__team">Marketing</p>
+              <ul class="team__socials flex__container">
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#instagram" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#twitter" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#facebook" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#linkedin" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="card__team">
               <img
@@ -165,6 +282,86 @@
               />
               <h3 class="title__team">Михайло Єрмаков</h3>
               <p class="p__team">UI Designer</p>
+              <ul class="team__socials flex__container">
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#instagram" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#twitter" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#facebook" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="team__socials_item">
+                    <svg viewBox="0 0 20 20">
+                      <use xlink:href="./icons/icons.svg#linkedin" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="title__heading">Постійні клієнти</h2>
+          <ul class="flex__container clients__list">
+            <li>
+              <a class="clients__list_item" href="#">
+                <svg viewBox="0 0 106 60">
+                  <use xlink:href="./icons/icons.svg#client1" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="clients__list_item" href="#">
+                <svg viewBox="0 0 106 60">
+                  <use xlink:href="./icons/icons.svg#client2" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="clients__list_item" href="#">
+                <svg viewBox="0 0 106 60">
+                  <use xlink:href="./icons/icons.svg#client3" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="clients__list_item" href="#">
+                <svg viewBox="0 0 106 60">
+                  <use xlink:href="./icons/icons.svg#client4" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="clients__list_item" href="#">
+                <svg viewBox="0 0 106 60">
+                  <use xlink:href="./icons/icons.svg#client5" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="clients__list_item" href="#">
+                <svg viewBox="0 0 106 60">
+                  <use xlink:href="./icons/icons.svg#client6" />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -172,33 +369,60 @@
     </main>
 
     <footer>
-      <div class="container">
-        <a class="logo logo__footer" href="./index.html"
-          ><span class="logo__web">Web</span>Studio</a
-        >
-        <address class="footer__address">
-          <ul>
-            <li>
-              <a
-                class="footer__link footer__googlemaps"
-                href="https://goo.gl/maps/zXnRZzUKmTX4V4ny9"
-                target="_blank"
-                rel="noreferrer nofollow"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+      <div class="container flex__container">
+        <div class="footer__info">
+          <a class="logo logo__footer" href="./index.html"
+            ><span class="logo__web">Web</span>Studio</a
+          >
+          <address class="footer__address">
+            <ul>
+              <li>
+                <a
+                  class="footer__link footer__googlemaps"
+                  href="https://goo.gl/maps/zXnRZzUKmTX4V4ny9"
+                  target="_blank"
+                  rel="noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__socials">
+          <h3 class="footer__socials_header">Приєднуйтесь</h3>
+          <ul class="footer__socials_list">
+            <li class="footer__socials_list--item">
+              <svg viewBox="0 0 20 20">
+                <use xlink:href="./icons/icons.svg#instagram" />
+              </svg>
             </li>
-            <li>
-              <a class="footer__link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="footer__socials_list--item">
+              <svg viewBox="0 0 20 20">
+                <use xlink:href="./icons/icons.svg#twitter" />
+              </svg>
             </li>
-            <li>
-              <a class="footer__link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+            <li class="footer__socials_list--item">
+              <svg viewBox="0 0 20 20">
+                <use xlink:href="./icons/icons.svg#facebook" />
+              </svg>
+            </li>
+            <li class="footer__socials_list--item">
+              <svg viewBox="0 0 20 20">
+                <use xlink:href="./icons/icons.svg#linkedin" />
+              </svg>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./svg-resize.js"></script>
   </head>
   <body>
     <header>
@@ -24,12 +25,10 @@
         <nav class="header__nav">
           <ul class="flex__container">
             <li class="flex__container__nav__item">
-              <a class="nav__link" href="./index.html">Студія</a>
+              <a class="nav__link a__active" href="./index.html">Студія</a>
             </li>
             <li class="flex__container__nav__item">
-              <a class="nav__link a__active" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="flex__container__nav__item">
               <a class="nav__link" href="./index.html">Контакти</a>
@@ -37,14 +36,20 @@
           </ul>
         </nav>
         <ul class="flex__container header__contact">
-          <li class="flex__container__contact__item">
-            <a class="header__link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+          <li>
+            <a class="header__link" href="mailto:info@devstudio.com">
+              <svg viewBox="0 0 16 13">
+                <use xlink:href="./icons/icons.svg#email" />
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li class="flex__container__contact__item">
-            <a class="header__link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+          <li>
+            <a class="header__link" href="tel:+380961111111">
+              <svg viewBox="0 0 10 17">
+                <use xlink:href="./icons/icons.svg#smartphone" />
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -73,7 +78,7 @@
           </ul>
           <ul class="grid__container">
             <li class="tile">
-              <a>
+              <a href="#">
                 <img
                   src="./images/portfolio/website.webp"
                   alt="Picture of notebook with opened website."
@@ -86,91 +91,107 @@
               </a>
             </li>
             <li class="tile">
-              <a>
+              <a href="#">
                 <img
                   src="./images/portfolio/newOrleanVsGoldenStar.webp"
                   alt="Poster of NBA players from New Orlean and Golden Star."
                   width="370"
                 />
-                <h3 class="tile__title">Постер New Orlean vs Golden Star</h3>
-                <p class="tile__p">Дизайн</p>
+                <div>
+                  <h3 class="tile__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="tile__p">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="tile">
-              <a>
+              <a href="#">
                 <img
                   src="./images/portfolio/seafoodRestaurant.webp"
                   alt="Logo of Seafood restoran. Drawed tuna with foreground text on it."
                   width="370"
                 />
-                <h3 class="tile__title">Ресторан Seafood</h3>
-                <p class="tile__p">Додаток</p>
+                <div>
+                  <h3 class="tile__title">Ресторан Seafood</h3>
+                  <p class="tile__p">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="tile">
-              <a>
+              <a href="#">
                 <img
                   src="./images/portfolio/primeProjectMarketing.webp"
                   alt="Picture of black headphones on plain white background."
                   width="370"
                 />
-                <h3 class="tile__title">Проєкт Prime</h3>
-                <p class="tile__p">Маркетинг</p>
+                <div>
+                  <h3 class="tile__title">Проєкт Prime</h3>
+                  <p class="tile__p">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="tile">
-              <a>
+              <a href="#">
                 <img
                   src="./images/portfolio/boxesProject.webp"
                   alt="Two small boxes on white background."
                   width="370"
                 />
-                <h3 class="tile__title">Проєкт boxes</h3>
-                <p class="tile__p">Додаток</p>
+                <div>
+                  <h3 class="tile__title">Проєкт boxes</h3>
+                  <p class="tile__p">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="tile">
-              <a>
+              <a href="#">
                 <img
                   src="./images/portfolio/inspirationWebsite.webp"
                   alt="Picture of computer monitor."
                   width="370"
                 />
-                <h3 class="tile__title">Inspiration has no Borders</h3>
-                <p class="tile__p">Веб-сайт</p>
+                <div>
+                  <h3 class="tile__title">Inspiration has no Borders</h3>
+                  <p class="tile__p">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="tile">
-              <a>
+              <a href="#">
                 <img
                   src="./images/portfolio/limitedEditionDesign.webp"
                   alt="Picture of magazine."
                   width="370"
                 />
-                <h3 class="tile__title">Видання Limited Edition</h3>
-                <p class="tile__p">Дизайн</p>
+                <div>
+                  <h3 class="tile__title">Видання Limited Edition</h3>
+                  <p class="tile__p">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="tile">
-              <a>
+              <a href="#">
                 <img
                   src="./images/portfolio/labProject.webp"
                   alt="Picture of white tag with text on it."
                   width="370"
                 />
-                <h3 class="tile__title">Проєкт LAB</h3>
-                <p class="tile__p">Маркетинг</p>
+                <div>
+                  <h3 class="tile__title">Проєкт LAB</h3>
+                  <p class="tile__p">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="tile">
-              <a>
+              <a href="#">
                 <img
                   src="./images/portfolio/growingBusiness.webp"
                   alt="Picture from above of notebook and human hands on the notebook keyboard."
                   width="370"
                 />
-                <h3 class="tile__title">Growing Business</h3>
-                <p class="tile__p">Додаток</p>
+                <div>
+                  <h3 class="tile__title">Growing Business</h3>
+                  <p class="tile__p">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -179,33 +200,60 @@
     </main>
 
     <footer>
-      <div class="container">
-        <a class="logo logo__footer" href="./index.html"
-          ><span class="logo__web">Web</span>Studio</a
-        >
-        <address class="footer__address">
-          <ul>
-            <li>
-              <a
-                class="footer__link footer__googlemaps"
-                href="https://goo.gl/maps/zXnRZzUKmTX4V4ny9"
-                target="_blank"
-                rel="noreferrer nofollow"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+      <div class="container flex__container">
+        <div class="footer__info">
+          <a class="logo logo__footer" href="./index.html"
+            ><span class="logo__web">Web</span>Studio</a
+          >
+          <address class="footer__address">
+            <ul>
+              <li>
+                <a
+                  class="footer__link footer__googlemaps"
+                  href="https://goo.gl/maps/zXnRZzUKmTX4V4ny9"
+                  target="_blank"
+                  rel="noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__socials">
+          <h3 class="footer__socials_header">Приєднуйтесь</h3>
+          <ul class="footer__socials_list">
+            <li class="footer__socials_list--item">
+              <svg viewBox="0 0 20 20">
+                <use xlink:href="./icons/icons.svg#instagram" />
+              </svg>
             </li>
-            <li>
-              <a class="footer__link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="footer__socials_list--item">
+              <svg viewBox="0 0 20 20">
+                <use xlink:href="./icons/icons.svg#twitter" />
+              </svg>
             </li>
-            <li>
-              <a class="footer__link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
+            <li class="footer__socials_list--item">
+              <svg viewBox="0 0 20 20">
+                <use xlink:href="./icons/icons.svg#facebook" />
+              </svg>
+            </li>
+            <li class="footer__socials_list--item">
+              <svg viewBox="0 0 20 20">
+                <use xlink:href="./icons/icons.svg#linkedin" />
+              </svg>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
